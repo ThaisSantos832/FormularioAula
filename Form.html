@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Cadastro de Usuário</h1></header>
+    <form name="form1"action="dados.html" method="post">
+        <div class="input">
+            <label for="name">Nome:</label>
+            <input type="text"
+            name="txt_nome"
+            id="nome"
+            maxlength="45"
+            required
+            >
+        </div>
+        <div class="input">
+            <label for="senha">Senha:</label>
+            <input type="password"
+            name="txt_senha"
+            id="senha"
+            placeholder="Digite Aqui"
+            required
+            minlength="8"
+            >
+        </div>
+        <div class="input">
+            <label for="email">E-mail:</label>
+                <input type="email" name="txt_email" id="email" required>
+        </div>
+        <div class="input">
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date"
+            name="data_nasc"
+            id="nascimento"
+            max="2023-12-31"
+            min="2023-01-01"
+            >   
+        </div>
+
+        <div class="input">
+            <label>Selecione seus gêneros favoritos:</label><br>
+            <input type="checkbox" name="ck_terror">Terror</label><br>
+            <input type="checkbox" name="ck_acao">Ação</label><br>
+            <input type="checkbox" name="ck_ficção">Ficção</label><br>
+            <input type="checkbox" name="ck_drama">Drama</label>
+        </div>
+
+        <div class="input">
+            <label>Escolha um tema:</label><br>
+            <input type="radio" name="rd_tema" value="claro"><label>Claro</label><br>
+            <input type="radio" name="rd_tema" value="escuro"><label>Escuro</label><br>
+        </div>
+
+        <div class="input">
+            <label>Escolha um Instrumento Musical</label><br>
+            <select name="sl_inst"><br>
+                <option value="ata">Atabaque</option>
+                <option value="bat">Bateria</option>
+                <option value="bass">Contrabaixo</option>
+                <option value="guit">Guitarra</option>
+                <option value="piano">Piano</option>
+                <option value="violao">Violão</option>
+            </select>
+        </div>
+
+        <div class="input"><br>
+            <label>Deixe seu comentário</label><br>
+            <textarea name="ta_coment" id="" ></textarea>
+        </div>
+
+        <div class="input">
+            <input type="submit" value="Enviar Formulário">
+        </div>
+
+        <div class="input">
+            <input type="resent" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
