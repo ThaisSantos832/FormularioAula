@@ -31,3 +31,13 @@ textarea{
     height: 250px;
     resize: none;
 }
+
+@media screen and(max-width:500px){
+    body{
+        background-color: chartreuse;
+    }
+    form,textarea{
+        width: 100%;
+    } 
+   
+}
