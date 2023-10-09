@@ -32,12 +32,15 @@ textarea{
     resize: none;
 }
 
-@media screen and(max-width:500px){
+@media screen and (max-width:500px){
     body{
-        background-color: chartreuse;
+       
     }
     form,textarea{
         width: 100%;
     } 
+    form{
+        background-color: chartreuse;
+    }
    
 }
